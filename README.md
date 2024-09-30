@@ -1,6 +1,4 @@
-# Sorting and Finding Path
+# Breast Cancer
 
-This is to develop a programme that will find the shortest path in a maze.
 
-Tools: Python and Java
 
