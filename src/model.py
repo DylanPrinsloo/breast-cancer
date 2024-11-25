@@ -3,7 +3,7 @@ from tensorflow.keras.applications import VGG16
 from tensorflow.keras.layers import Input, Conv2D, MaxPooling2D, Conv2DTranspose, concatenate
 from tensorflow.keras.models import Model
 
-def unet_vgg16_model(input_shape):
+def breast_cancer_model(input_shape):
     vgg_base = VGG16(weights='imagenet', include_top=False, input_shape=input_shape)
     for layer in vgg_base.layers:
         layer.trainable = False

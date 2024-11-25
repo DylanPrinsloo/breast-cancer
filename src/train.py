@@ -20,7 +20,7 @@ def plot_training_metrics(history):
     plt.show()
 
 def train_model(train_data_gen, valid_data_gen, train_steps_per_epoch, valid_steps_per_epoch, input_shape):
-    model = unet_vgg16_model(input_shape)
+    model = breast_cancer_model(input_shape)
     model.compile(optimizer=Adam(), loss='binary_crossentropy', metrics=['accuracy'])
     history = model.fit(
         train_data_gen,
@@ -31,5 +31,5 @@ def train_model(train_data_gen, valid_data_gen, train_steps_per_epoch, valid_ste
         verbose=1
     )
     plot_training_metrics(history)
-    model.save('vgg16_unet_model.h5')
+    model.save('breast-cancer-segmentation.h5')
     return model

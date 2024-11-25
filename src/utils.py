@@ -1,4 +1,4 @@
-# utilty functions , logging 
+# utility functions, logging 
 import matplotlib.pyplot as plt
 import numpy as np
 
